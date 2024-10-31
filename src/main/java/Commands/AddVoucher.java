@@ -1,8 +1,8 @@
 package Commands;
 
-public class AddVoucherCommand extends Command {
+public class AddVoucher extends Command {
 
-    public AddVoucherCommand(String title) {
+    public AddVoucher(String title) {
         super(title);
     }
 

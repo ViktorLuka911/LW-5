@@ -1,31 +1,31 @@
 package Menu;
 
 import Commands.Command;
-import Commands.GoToMenuCommand;
+import Commands.GoToMenu;
 import Utilities.Utilities;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MenuSort extends Menu {
-    public MenuSort() {
+public class Sort extends Menu {
+    public Sort() {
 
         // Ініціалізація списку підменю
         ArrayList<Menu> subMenus = new ArrayList<>(
                 Arrays.asList(
-                        new MenuSortOrder("Сортувати за назвою"),
-                        new MenuSortOrder("Сортувати за кількістю днів"),
-                        new MenuSortOrder("Сортувати за ціною"),
-                        new MenuSortOrder("Сортувати за датою")
+                        new SortOrder("Сортувати за назвою"),
+                        new SortOrder("Сортувати за кількістю днів"),
+                        new SortOrder("Сортувати за ціною"),
+                        new SortOrder("Сортувати за датою")
                 )
         );
 
         // Ініціалізація списку команд
         ArrayList<Command> commands = new ArrayList<>(
                 Arrays.asList(
-                        new GoToMenuCommand("Сортувати за назвою", subMenus.get(0)),
-                        new GoToMenuCommand("Сортувати за кількістю днів", subMenus.get(1)),
-                        new GoToMenuCommand("Сортувати за ціною", subMenus.get(2)),
-                        new GoToMenuCommand("Сортувати за датою", subMenus.get(3))
+                        new GoToMenu("Сортувати за назвою", subMenus.get(0)),
+                        new GoToMenu("Сортувати за кількістю днів", subMenus.get(1)),
+                        new GoToMenu("Сортувати за ціною", subMenus.get(2)),
+                        new GoToMenu("Сортувати за датою", subMenus.get(3))
                 )
         );
 

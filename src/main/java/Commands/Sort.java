@@ -2,10 +2,10 @@ package Commands;
 
 import java.util.Scanner;
 
-public class SortCommand extends Command {
+public class Sort extends Command {
     private String type;
 
-    public SortCommand(String type, String title) {
+    public Sort(String type, String title) {
         super(title);
         this.type = type;
     }

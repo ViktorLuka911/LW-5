@@ -1,9 +1,9 @@
 package Commands;
 
 import java.util.Scanner;
-public class ShowListCommand extends Command {
+public class ShowList extends Command {
 
-    public ShowListCommand(String title) {
+    public ShowList(String title) {
         super(title);
     }
 

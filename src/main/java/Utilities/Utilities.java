@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Utilities {
 
-    //Функція для правильного введення
+    // Функція для правильного введення
     public static int getValidatedInput(int min, int max) {
         Scanner scanner = new Scanner(System.in);
         int input;

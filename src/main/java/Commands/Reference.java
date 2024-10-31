@@ -2,9 +2,9 @@ package Commands;
 
 import java.util.Scanner;
 
-public class ReferenceCommand extends Command {
+public class Reference extends Command {
 
-    public ReferenceCommand(String title) {
+    public Reference(String title) {
         super(title);
     }
 
